@@ -1,0 +1,27 @@
+{
+    "name": "grunt-git-init-and-deploy",
+    "description": "Creates an empty git repository, commit/push all changes to the provided git remote/branch.",
+    "version": "0.0.1",
+    "homepage": "https://github.com/Ideame/grunt-git-init-and-deploy",
+    "author": {
+        "name": "Juan Pablo Garcia",
+        "url": "http://github.com/jpgarcia/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Ideame/grunt-git-init-and-deploy.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Ideame/grunt-git-init-and-deploy/issues"
+    },
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.0"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.0"
+    },
+    "keywords": [ "grunt", "git", "deploy", "init" ]
+}
