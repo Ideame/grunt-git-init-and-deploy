@@ -18,6 +18,10 @@ module.exports = function (grunt) {
 
         grunt.util.async.series([
             function (callback) {
+                grunt.log.writeln('Remove existing git if any');
+                grunt.util.spawn({ cmd: 'rm', args: [ '-rf', '.git' ], opts: { cwd: deployFolder } }, callback);
+            },
+            function (callback) {
                 grunt.log.writeln('Initializing a new repo');
                 grunt.util.spawn({ cmd: 'git', args: [ 'init', '.' ], opts: { cwd: deployFolder } }, callback);
             },
